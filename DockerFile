@@ -1,0 +1,6 @@
+FROM node:latest
+LABEL description="构建部署用的docker镜像"
+WORKDIR /docs
+RUN npm install -g docsify-cli@latest
+EXPOSE 3000/tcp
+ENTRYPOINT docsify serve .

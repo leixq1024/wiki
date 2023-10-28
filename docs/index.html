@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>wiki(>_<)</title>
+    <title>糕手的Wiki(>_<)</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description" />
     <meta
@@ -23,11 +23,16 @@
     <div id="app"></div>
     <script>
       window.$docsify = {
-        name: "wiki",
+        name: "糕手的Wiki",
         coverpage: true,
         loadSidebar: true,
+        routerMode: "history",
+        subMaxLevel: 3,
         repo: "https://github.com/leixq1024/wiki.git",
-        search: { paths: ["/", "/运维", "/数字中心"], placeholder: "搜索" },
+        search: {
+          paths: ["/", "/工作日志/项目部署/兰州部署", "/技术笔记"],
+          placeholder: "搜索",
+        },
       };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
